@@ -17,7 +17,6 @@ function validate() {
     }
 
     if (valid) {
-        alert ("Login was successful");
         window.location = "begin.html";
         return false;
     }
@@ -49,10 +48,15 @@ function validate() {
 
 </script>
 
+<center>
 <form name = "myform">
   <p>
-    ENTER USER NAME <input type="text" name="username">
-    ENTER PASSWORD <input type="password" name="pword">
+  	<image src="kobi.svg">
+    <h1>ENTER USER NAME</h1><br>
+	 <input type="text" name="username">
+    <h1>ENTER PASSWORD</h1><br>
+	 <input type="password" name="pword"><br>
     <input type="button" value="Check In" name="Submit" onclick="validate()">
   </p>
 </form>
+</center>
